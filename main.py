@@ -10,8 +10,8 @@ import logging
 logging.basicConfig(filename="bot.log", format="%(asctime)s - %(levelname)s - %(message)s",
                         datefmt="%Y/%m/%d %I:%M:%S %p", level=0)
 
-SUDO_ID = int() # your id 
-TOKEN = ""
+SUDO_ID = "TG_SUDO" 
+TOKEN = "TG_TOKEN"
 BOT = telebot.TeleBot(TOKEN)
 bot_name = BOT.get_me().first_name
 bot_username = BOT.get_me().username
